@@ -7,5 +7,6 @@ def lista_imion(lista):
     for imie in lista:
         print(imie)
 
-imiona = ['Kacper', 'Adam', 'Anna', 'Dominik', "Grzegorz"]
+
+imiona = ["Kacper", "Adam", "Anna", "Dominik", "Grzegorz"]
 lista_imion(imiona)
