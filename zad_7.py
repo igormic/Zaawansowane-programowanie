@@ -55,7 +55,6 @@ def pobierz_browary(limit: int = 20) -> list[Brewery]:
 
     dane_json: list[dict] = odpowiedz.json()
 
-    # Tworzymy instancję klasy Brewery dla każdego słownika z JSON-a
     lista_browarow: list[Brewery] = [
         Brewery(**dane_browaru) for dane_browaru in dane_json
     ]
