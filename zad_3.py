@@ -1,6 +1,7 @@
 def czy_parzysta(liczba: int) -> bool:
     return liczba % 2 == 0
 
+
 wynik: bool = czy_parzysta(4)
 
 if wynik:

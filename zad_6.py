@@ -4,6 +4,7 @@ def listy(lista1: list[int], lista2: list[int]) -> list[int]:
 
     return [x**3 for x in unikalne]
 
+
 l1 = [1, 2, 3]
 l2 = [2, 3, 4]
 
