@@ -1,0 +1,27 @@
+name: Python Syntax Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-syntax:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Compile Check
+        run: python3 -m compileall -q .
+
+      - name: Install Ruff
+        run: pip3 install ruff
+
+      - name: Run Ruff
+        run: ruff check .
